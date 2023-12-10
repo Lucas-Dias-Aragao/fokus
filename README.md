@@ -8,5 +8,5 @@ _"A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por F
 * Descanso curto: 5 minutos
 * Descanso longo: 15 minutos
 
-Confira o resultado [aqui]().
+Confira o resultado [aqui](https://lucas-dias-aragao.github.io/fokus/).
 
