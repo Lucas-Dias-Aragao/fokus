@@ -55,7 +55,7 @@ function alterarContexto(contexto) {
   })
 
   html.setAttribute('data-contexto', contexto)
-  banner.setAttribute('src',`/imagens/${contexto}.png`)
+  banner.setAttribute('src',`./imagens/${contexto}.png`)
   switch(contexto) {
     case "foco":
       titulo.innerHTML = `
@@ -107,13 +107,13 @@ function iniciarOuPausar() {
   somPlay.play()
   intervaloId = setInterval(contagemRegressiva, 1000)
   iniciarOuPausarBt.textContent = "Pausar"
-  imgBotaoPlayPause.setAttribute('src','/imagens/pause.png')
+  imgBotaoPlayPause.setAttribute('src','./imagens/pause.png')
 }
 
 function zerar() {
   clearInterval(intervaloId)
   iniciarOuPausarBt.textContent = "Começar"
-  imgBotaoPlayPause.setAttribute('src','/imagens/play_arrow.png')
+  imgBotaoPlayPause.setAttribute('src','./imagens/play_arrow.png')
   intervaloId = null
 }
 
