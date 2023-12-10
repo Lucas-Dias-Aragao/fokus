@@ -11,10 +11,10 @@ const iniciarOuPausarBt = document.querySelector('#start-pause span')
 const imgBotaoPlayPause = document.querySelector('.app__card-primary-button-icon')
 const tempoNaTela = document.querySelector('#timer')
 
-const musica = new Audio('./sons/luna-rise-part-one.mp3')
-const somTempoFinalizado = new Audio('./sons/beep.mp3')
-const somPlay = new Audio('./sons/play.wav')
-const somPause = new Audio('./sons/pause.mp3')
+const musica = new Audio('sons/luna-rise-part-one.mp3')
+const somTempoFinalizado = new Audio('sons/beep.mp3')
+const somPlay = new Audio('sons/play.wav')
+const somPause = new Audio('sons/pause.mp3')
 
 let tempoDecorridoEmSegundos = 1500
 let intervaloId = null
@@ -55,7 +55,7 @@ function alterarContexto(contexto) {
   })
 
   html.setAttribute('data-contexto', contexto)
-  banner.setAttribute('src',`./imagens/${contexto}.png`)
+  banner.setAttribute('src',`imagens/${contexto}.png`)
   switch(contexto) {
     case "foco":
       titulo.innerHTML = `
@@ -107,13 +107,13 @@ function iniciarOuPausar() {
   somPlay.play()
   intervaloId = setInterval(contagemRegressiva, 1000)
   iniciarOuPausarBt.textContent = "Pausar"
-  imgBotaoPlayPause.setAttribute('src','./imagens/pause.png')
+  imgBotaoPlayPause.setAttribute('src','imagens/pause.png')
 }
 
 function zerar() {
   clearInterval(intervaloId)
   iniciarOuPausarBt.textContent = "Começar"
-  imgBotaoPlayPause.setAttribute('src','./imagens/play_arrow.png')
+  imgBotaoPlayPause.setAttribute('src','imagens/play_arrow.png')
   intervaloId = null
 }
 
