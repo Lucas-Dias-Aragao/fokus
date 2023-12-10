@@ -13,7 +13,8 @@ const tempoNaTela = document.querySelector('#timer')
 
 const musica = new Audio('./sons/luna-rise-part-one.mp3')
 const somTempoFinalizado = new Audio('./sons/beep.mp3')
-const somPlay = new Audio('./sons/play.wav')
+//const somPlay = new Audio('./sons/play.wav')
+const somPlay = new Audio('sons/play.wav')
 const somPause = new Audio('./sons/pause.mp3')
 
 let tempoDecorridoEmSegundos = 1500
