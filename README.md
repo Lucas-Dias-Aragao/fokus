@@ -11,5 +11,5 @@ _"A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por F
 ## Tarefas:
  Foi criado uma lista de tarefas para auxiliar o usuário e os dados são armazenados no localStorage
 
-Confira o resultado [aqui]().
+Confira o resultado [aqui](https://lucas-dias-aragao.github.io/fokus/).
 
